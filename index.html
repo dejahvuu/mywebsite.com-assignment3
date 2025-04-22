@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plate to Palette Charity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Plate to Palette Charity">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/header-image.jpg" alt="Paint smear">
+
+            
+            <div class="title">
+                <h1 class="big">Feeding</h1>
+                <h1 class="small">Young Artists</h1>
+
+                <p>One Plate at a Time</p>
+            </div>
+            
+            <a href="about.html" class="button">Learn More</a>
+
+        </header>
+        
+        <nav>
+            <img src="img/logo.png" alt="Logo" class="logo">
+
+            <a class="hamburger-menu" href="#">
+                <img src="img/hamburger-menu.png" alt="hamburger-menu-png">
+            </a>
+
+            <ol class="main-nav">
+                <li><a href="home">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="button">Donate</a></li>
+            </ol>
+
+            <div class="sidebar-nav">
+                <ol>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <br>
+                    <li><a id="xbtn" href="#">Close</a></li>
+                </ol>
+            </div>
+        </nav>
+
+        <script> 
+            const burgerIcon = document.querySelector('.hamburger-menu');
+            const sideNav = document.querySelector('.sidebar-nav');
+            const xbtn = document.getElementById('xbtn');
+    
+            function openNav () {
+                sideNav.style.width = '100vw';
+            }
+    
+            function closeNav () {
+                sideNav.style.width = '0vw';
+            }
+    
+            burgerIcon.addEventListener('click', openNav);
+            xbtn.addEventListener('click', closeNav);
+    
+            
+        </script>
+
+        <section class="intro">
+            <div class="box1">
+                <h3>Plate to Palette (PTP)</h3>
+                <p>
+                    Welcome to Plate to Palette (PTP), where nourishment fuels creativity. We are a local non-profit dedicated to supporting 
+                    young artists by providing meals, fostering creativity, and building a strong, united community. At PTP, we believe that 
+                    no dream should be hindered by hunger. Through our programs, we offer not just food, but a safe and inspiring space where 
+                    youth can connect, express themselves, and grow. Join us in empowering the next generation of artists—one plate, one 
+                    palette at a time.
+
+                    <br>
+                    <br>
+
+                    Whether you're a young artist in need of support or someone looking to make a difference, there's a place for you at PTP. 
+                    If you're seeking meals and a creative community, you can sign up to participate in our programs. If you're passionate 
+                    about giving back, we welcome volunteers to help serve meals, mentor youth, or assist with events. Together, we can 
+                    nourish both body and soul, creating a future where every young artist has the strength to pursue their dreams.
+                </p>
+            </div>
+
+            <div class="intro-image">
+                <img src="img/building.jpg" alt="Building">
+            </div>
+
+        </section>
+
+        <section class="explore">
+
+            <div class="explore-images">
+                <img src="img/paint.png" alt="Paint">
+                <img src="img/sandwich1.jpg" alt="Close up of sandwich">
+            </div>
+
+            <div>
+                <h3>Make Your Mark</h3>
+                <p>
+                    At PTP, we're committed to giving young artists the support they need to thrive.  Our Nourish & Create Program provides
+                    free meals and art classes to youth in need, ensuring they have both the strength and the creative space to follow 
+                    their passions. Whether it's a warm meal, a place to express  themselves, or a community that uplifts them, we're here
+                    to help. 
+
+                    <br>
+                    <br>
+
+                    Ready to learn more? Click below to explore the program and see how you can sign up or get involved!
+                </p>
+
+                <a href="program.html" class="button">Explore the Program</a>
+
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div>
+                <p>
+                    "At PTP, we believe that no one should have to choose between food and their dreams. Watching these kids gain confidence,
+                     build friendships, and create incredible art makes every effort worthwhile."
+                </p>
+
+                <br>
+
+                <h4>Program Coordinator - Rachel P. </h4>
+            </div>
+
+            <div>
+                <p>
+                    "PTP has been a lifesaver for me. Not only do I get a warm meal, but I also get to express myself through art in ways
+                    I never thought possible. The community here is so supportive, and I've made lifelong friends who understand my passion."
+                </p>
+
+                <br>
+
+                <h4>Participant - Jordan M. (Age 17)</h4>
+            </div>
+
+            <div>
+                <p>
+                    "As a single mom, it's not always easy to provide everything my son needs to pursue his artistic dreams. PTP has given
+                     him a space to grow, learn, and feel valued. I'm beyond grateful for the kindness and encouragement they provide."
+                </p>
+
+                <br>
+
+                <h4>Parent - Lisa R.</h4>
+            </div>
+
+        </section>
+
+        <section class="gallery">
+            <div>
+                <img src="img/paint-easel.png" alt="Paint Easels">
+            </div>
+
+            <div>
+                <img src="img/paint2.jpg" alt="Paint">
+            </div>
+
+            <div>
+                <img src="img/paint-brushes.png" alt="Paint brushes">
+            </div>
+        </section>  
+
+    </body>
+    
+    <footer>
+        <section class="footer-text">
+            <div>
+                <img src="img/logo.png" alt="Logo" class="logo2">
+            </div>
+    
+            <div class="footer-nav">
+                <ol>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+            </div>
+    
+            <div>
+                <p>
+                    123 Queen St W, Toronto,<br>
+                    ON M5H 2M9
+    
+                    <br> 
+                    <br>
+    
+                    (416) 979-6648
+    
+                    <br>
+                    <br>
+    
+                    platetopalette@info.com
+                </p>
+            </div>
+
+            <div class="icons">
+                <img src="img/instagram.png" alt="Instagram logo">
+                <img src="img/facebook.png" alt="Facebook logo">
+                <img src="img/pinterest.png" alt="Pinterest logo">
+                <img src="img/youtube.png" alt="Youtube logo">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <p class="copyright">
+            &copy 2025 PLATE TO PALETTE. All rights reserved.
+        </p>
+     
+    </footer>
+
+
+</html>

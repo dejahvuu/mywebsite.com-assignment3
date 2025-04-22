@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Plate to Palette</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="About Plate to Palette">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/gallery.jpg" alt="Art gallery">
+
+            
+            <div class="title3">
+                <h1 class="big">Let's Talk <br> Art History</h1>
+                <p>Where we were & where we're going</p>
+            </div>
+
+        </header>
+        
+        <nav>
+            <img src="img/logo.png" alt="Logo" class="logo">
+
+            <a class="hamburger-menu" href="#">
+                <img src="img/hamburger-menu.png" alt="hamburger-menu-png">
+            </a>
+
+            <ol class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="button">Donate</a></li>
+            </ol>
+
+            <div class="sidebar-nav">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <br>
+                    <li><a id="xbtn" href="#">Close</a></li>
+                </ol>
+            </div>
+        </nav>
+
+        <script> 
+            const burgerIcon = document.querySelector('.hamburger-menu');
+            const sideNav = document.querySelector('.sidebar-nav');
+            const xbtn = document.getElementById('xbtn');
+    
+            function openNav () {
+                sideNav.style.width = '100vw';
+            }
+    
+            function closeNav () {
+                sideNav.style.width = '0vw';
+            }
+    
+            burgerIcon.addEventListener('click', openNav);
+            xbtn.addEventListener('click', closeNav);
+    
+            
+        </script>
+
+        <section class="mission">
+            <h2 class="box3">Our Mission</h2>
+            <p>
+                At Plate to Palette (PTP), our mission is to ensure that no young adult has to choose between food and their future. 
+                We are dedicated to nourishing both body and creativity by providing free meals, a safe space, and artistic opportunities
+                for young adults (18-24) in the Greater Toronto Area. Through food security and creative expression, we aim to uplift and
+                empower individuals, fostering a supportive community where everyone has the chance to thrive.
+                <br>
+                <br>
+                Founded in 2004, PTP began as a grassroots initiative to provide meals to young artists struggling to balance their passion
+                with financial hardship. What started as a small meal-sharing program quickly grew into a space where young people could
+                connect, create, and find support beyond just food. 
+                <br>
+                <br>
+                Over the years, we have collaborated with organizations such as the Art Gallery of Ontario (AGO), local food banks,
+                and community art programs to expand our reach and provide even greater opportunities for young adults.
+                <br>
+                <br>
+                Today, PTP serves hundreds of young adults each year, offering nutritious meals, free art workshops, and mentorship
+                programs designed to inspire and uplift. We provide a welcoming environment where young people can explore their
+                passions—whether they are artists, musicians, writers, or simply individuals seeking a safe and supportive space.
+                Our Nourish & Create program has helped countless participants regain confidence, build friendships, and discover
+                new opportunities through food and artistic expression.
+                <br>
+                <br>
+                Looking ahead, we aim to expand our reach, ensuring that no young adult in the GTA goes hungry or feels isolated.
+                <br>
+                <br>
+                Our goals include: <br>
+                - Increasing the number of meals served per year <br>
+                - Expanding our volunteer network to provide more mentorship and creative guidance <br>
+                - Establishing more accessible locations for PTP programming <br>
+                - Developing career and skill-building workshops alongside our creative programs
+                <br>
+                <br>
+                Through our work, we strive to create lasting change—not just by feeding individuals for a day, but by providing
+                them with the tools, resources, and community to build a sustainable future. At PTP, we believe that when young
+                people are nourished, their creativity and potential know no bounds.
+            </p>
+        </section>
+
+
+        <section class="team-grid">
+
+            <div class="top">
+                <h2>The Team Behind PTP</h2>
+
+                <hr>
+            </div>
+            
+            <div>
+                <img src="img/alex.png" alt="Asian man looking to the right">
+                <h3>Alex Chen - Program Director</h3>
+                <p>
+                    With a background in social work, Alex co-founded PTP in 2004 to ensure young adults never have to choose between
+                    food and their future. His leadership has helped PTP grow from a small initiative into a thriving non-profit that
+                    nourishes and empowers hundreds each year.
+                </p>
+            </div>
+
+            <div>
+                <img src="img/samantha.png" alt="Fair skin woman standing">
+                <h3>Samantha Reyes - Artist & Educator</h3>
+                <p>
+                    As an artist and former educator, Samantha saw how financial barriers held young creatives back. She co-founded
+                    PTP to provide free meals and artistic opportunities, helping launch the Nourish & Create program in partnership
+                    with organizations like the AGO.
+                </p>
+            </div>
+
+            <div>
+                <img src="img/jordon.png" alt="Black man standing">
+                <h3>Jordan Brown - Culinary Expert</h3>
+                <p>
+                    With a background in culinary arts, Jordan helped shape PTP's food program, ensuring every participant receives
+                    nutritious, high-quality meals. His passion for food as a tool for connection has led to partnerships with local
+                    restaurants and food banks.
+                </p>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="box4"> 
+                <h2>Our Locations - In the GTA</h2>
+
+                <div class="white">
+                    <h3>Toronto (Main Location)</h3>
+                    <p>
+                        123 Queen St W, Toronto, ON M5H 2M9 <br>
+                        (416) 555-7890 <br>
+                        Directions
+                    </p>
+                </div>
+
+                <br>
+
+                <div class="white">
+                    <h3>Mississauga</h3>
+                     <p>
+                        456 Main St, Mississauga, ON L5M 1X3 <br>
+                        (905) 555-1234 <br>
+                        Directions
+                    </p>
+                </div>
+
+                <br>
+
+                <div class="white">
+                    <h3>Brampton</h3>
+                    <p>
+                        789 Steeles Ave E, Brampton, ON L6W 4S2 <br>
+                        (416) 979-6648 <br>
+                        Directions
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143766.47838442173!2d-79.53892284763633!3d43.73080857938484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1744067127844!5m2!1sen!2sca" width="550" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </body>
+
+    <footer>
+        <section class="footer-text">
+            <div>
+                <img src="img/logo.png" alt="Logo" class="logo2">
+            </div>
+    
+            <div class="footer-nav">
+                <ol>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+            </div>
+    
+            <div>
+                <p>
+                    123 Queen St W, Toronto,<br>
+                    ON M5H 2M9
+    
+                    <br> 
+                    <br>
+    
+                    (416) 979-6648
+    
+                    <br>
+                    <br>
+    
+                    platetopalette@info.com
+                </p>
+            </div>
+
+            <div class="icons">
+                <img src="img/instagram.png" alt="Instagram logo">
+                <img src="img/facebook.png" alt="Facebook logo">
+                <img src="img/pinterest.png" alt="Pinterest logo">
+                <img src="img/youtube.png" alt="Youtube logo">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <p class="copyright">
+            &copy 2025 PLATE TO PALETTE. All rights reserved.
+        </p>
+     
+    </footer>
+
+</html>

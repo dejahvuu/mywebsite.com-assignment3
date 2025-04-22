@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plate to Palette Charity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Plate to Palette Charity">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <nav class="vol">
+            <img src="img/logo.png" alt="Logo" class="logo">
+
+            <a class="hamburger-menu" href="#">
+                <img src="img/hamburger-menu.png" alt="hamburger-menu-png">
+            </a>
+
+            <ol class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="button">Donate</a></li>
+            </ol>
+
+            <div class="sidebar-nav">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <br>
+                    <li><a id="xbtn" href="#">Close</a></li>
+                </ol>
+            </div>
+        </nav>
+
+        <script> 
+            const burgerIcon = document.querySelector('.hamburger-menu');
+            const sideNav = document.querySelector('.sidebar-nav');
+            const xbtn = document.getElementById('xbtn');
+    
+            function openNav () {
+                sideNav.style.width = '100vw';
+            }
+    
+            function closeNav () {
+                sideNav.style.width = '0vw';
+            }
+    
+            burgerIcon.addEventListener('click', openNav);
+            xbtn.addEventListener('click', closeNav);
+    
+            
+        </script>
+
+        <section class="contact-grid">
+
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <br>
+                <p>
+                    We'd love to hear from you! Whether you have questions about our programs, want to volunteer, or simply want to learn
+                    more about PTP, we're here to help. Please reach out to us through the form below or contact us directly using the
+                    details provided. We'll get back to you as soon as possible!
+                </p>
+
+                <br>
+
+                <h3>Call Us</h3>
+                <p>(416) 979-6648</p>
+                
+                <br>
+
+                <h3>Send an Email</h3>
+                <p>platetopalette@info.com</p>
+
+                <br>
+
+                <h3>Main Location</h3>
+                <p>123 Queen St W, Toronto, ON M5H 2M9</p>
+
+                <br>
+               <p>Mon-Fri...8:30am-8:00pm <br> Sat...7:00am-9:00pm <br>Sun...Closed</p>
+            </div>
+
+            <div class="form-container3">
+                <fieldset>
+                    <legend>Contact Us</legend>
+    
+                    <label for="fName">First Name</label>
+                    <br>
+                    <input type="text" id="fName" name="first_name">
+    
+                    <br>
+    
+                    <label for="lName">Last Name</label>
+                    <br>
+                    <input type="text" id="lName" name="last_name">
+    
+                    <br>
+    
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="text" id="phone" name="phone_number">
+    
+                    <br>
+    
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" id="email" name="email_address">
+          
+                    <br>
+    
+                    <label for="message">Why do you want to volunter with PTP?</label>
+                    <br>
+                    <input type="text" id="message" name="message">
+    
+                    <br>
+    
+                    <button type="submit">Submit Now</button>
+                </fieldset>
+            </div>
+            
+        </section>
+
+        
+    </body>
+
+    <footer>
+        <section class="footer-text">
+            <div>
+                <img src="img/logo.png" alt="Logo" class="logo2">
+            </div>
+    
+            <div class="footer-nav">
+                <ol>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+            </div>
+    
+            <div>
+                <p>
+                    123 Queen St W, Toronto,<br>
+                    ON M5H 2M9
+    
+                    <br> 
+                    <br>
+    
+                    (416) 979-6648
+    
+                    <br>
+                    <br>
+    
+                    platetopalette@info.com
+                </p>
+            </div>
+    
+            <div class="icons">
+                <img src="img/instagram.png" alt="Instagram logo">
+                <img src="img/facebook.png" alt="Facebook logo">
+                <img src="img/pinterest.png" alt="Pinterest logo">
+                <img src="img/youtube.png" alt="Youtube logo">
+            </div>
+    
+        </section>
+    
+        <hr>
+    
+        <p class="copyright">
+            &copy 2025 PLATE TO PALETTE. All rights reserved.
+        </p>
+     
+    </footer>
+    
+
+</html>

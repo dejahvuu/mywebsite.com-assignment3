@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plate to Palette Program</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Plate to Palette Program">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/sandwich2.jpg" alt="Sandwich being cut">
+
+            
+            <div class="title2">
+                <h1 class="big">Nourish & Create</h1>
+                <p>Our program that supplies all your needs</p>
+            </div>
+            
+        </header>
+        
+        <nav>
+            <img src="img/logo.png" alt="Logo" class="logo">
+
+            <a class="hamburger-menu" href="#">
+                <img src="img/hamburger-menu.png" alt="hamburger-menu-png">
+            </a>
+
+            <ol class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="button">Donate</a></li>
+            </ol>
+
+            <div class="sidebar-nav">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <br>
+                    <li><a id="xbtn" href="#">Close</a></li>
+                </ol>
+            </div>
+        </nav>
+
+        <script> 
+            const burgerIcon = document.querySelector('.hamburger-menu');
+            const sideNav = document.querySelector('.sidebar-nav');
+            const xbtn = document.getElementById('xbtn');
+    
+            function openNav () {
+                sideNav.style.width = '100vw';
+            }
+    
+            function closeNav () {
+                sideNav.style.width = '0vw';
+            }
+    
+            burgerIcon.addEventListener('click', openNav);
+            xbtn.addEventListener('click', closeNav);
+    
+            
+        </script>
+
+        <section class="why">
+            <h2>Why Nourish & Create</h2>
+
+            <p>
+                At Nourish & Create, we believe that creativity thrives when basic needs are met. Our program offers free meals to young <br>
+                adults (18-24) in the GTA, ensuring they have the fuel they need to thrive, both physically and mentally. We understand
+                that <br> hunger can be a barrier to focusing on dreams, so we provide a safe and welcoming space where individuals can access <br>
+                nutritious food and explore their creativity without worry.
+
+                <br>
+                <br>
+
+                But we don't stop at food—we also offer workshops, mentorship, and opportunities for personal growth. Whether you're <br>
+                looking to develop artistic skills, connect with others, or discover new passions, Nourish & Create is a place where
+                you can grow <br> in every way. It's more than just a meal—it's a community of support and opportunity for young adults
+                to unleash their  <br> potential and build a brighter future.
+            </p>
+
+            <img src="img/students.jpg" alt="Group of girls">
+
+        </section>
+
+        <section class="join">
+            <div>
+                <h2>JOIN THE COMMUNITY <br> Sign Up Today!</h2>
+
+                <p>
+                    Are you between the ages of 18-24, living in the GTA, and in need of support? PTP provides free meals for young adults
+                    while also offering a safe and welcoming space to connect, grow, and explore creativity. Whether you're an artist, a dreamer,
+                    or just looking for a place to belong, our program is here to nourish both body and mind. Come enjoy good food, develop
+                    new skills, and be part of a supportive community that believes in you. Sign up today and make PTP your space to thrive!
+                </p>
+            </div>
+
+            <div>
+                <img src="img/hands.jpg" alt="Hands covered in paint">
+            </div>
+
+        </section>
+
+        <section class="form-container">
+                <form action="" method="post">
+
+                    <fieldset>
+                        <legend>Participant - Sign Up Form</legend>
+    
+                        <label for="fName">First Name</label>
+                        <br>
+                        <input type="text" id="fName" name="first_name">
+
+                        <br>
+    
+                        <label for="lName">Last Name</label>
+                        <br>
+                        <input type="text" id="lName" name="last_name">
+    
+                        <br>
+    
+                        <label for="dob">Date of Birth</label>
+                        <br>
+                        <input type="date" id="dob" name="birth_date">
+    
+                        <br>
+
+                        <label for="phone">Phone Number</label>
+                        <br>
+                        <input type="text" id="phone" name="phone_number">
+
+                        <br>
+    
+                        <label for="email">Email Address</label>
+                        <br>
+                        <input type="email" id="email" name="email_address">
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Home Address</legend>
+    
+                        <label for="street">Steet Name</label>
+                        <br>
+                        <input type="text" id="street" name="street_adress">
+    
+                        <br>
+    
+                        <label for="city">City</label>
+                        <br>
+                        <input type="text" id="city" name="city">
+    
+                        <br>
+    
+                        <label for="pcode">Postal Code</label>
+                        <br>
+                        <input type="text" id="pcode" name="postal_code">
+                        
+                        <br>
+    
+                        <button type="submit">Submit Now</button>
+                    </fieldset>
+    
+                </form>
+        </section>
+
+        <section class="volunteer">
+            <div class="box2">
+                <h2>VOLUNTEER WITH PTP - Make a Difference!</h2>
+
+                <p>
+                    At PTP, we believe in the power of community and the impact that volunteers can have in shaping the lives of young adults.
+                    By volunteering with us, you're not just helping to serve meals—you're helping to create a safe, supportive space where
+                    young people can thrive. Whether you're mentoring, assisting with workshops, or simply providing a friendly face, your
+                    time and skills will make a lasting difference in the lives of those we serve. We're currently offering volunteer positions
+                    such as art teacher, cook, and server. Join our dedicated team of volunteers and help us nourish and inspire the next
+                    generation!
+                </p>
+            </div>
+
+            <div>
+                <p class="how-to">
+                    How to Sign Up as a Volunteer:
+                    <br>
+                    <br>
+                    1. Fill out the Volunteer Application Form - Provide your contact information, availability, and areas of interest.
+                    <br>
+                    <br>
+                    2. Complete a Background Check - Ensure the safety and wellbeing of our participants.
+                    <br>
+                    <br>
+                    3. Attend an Orientation - Learn about PTP's mission, guidelines, and how you can get involved.
+                    <br>
+                    <br>
+                    4. Start Volunteering! - Once approved, you'll be ready to contribute and make a positive impact in the community.
+                </p>
+
+                <a href="volunteer.html" class="button">Join the Team</a>
+
+            </div>
+        </section>
+    </body>
+
+    <footer>
+        <section class="footer-text">
+            <div>
+                <img src="img/logo.png" alt="Logo" class="logo2">
+            </div>
+    
+            <div class="footer-nav">
+                <ol>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+            </div>
+    
+            <div>
+                <p>
+                    123 Queen St W, Toronto,<br>
+                    ON M5H 2M9
+    
+                    <br> 
+                    <br>
+    
+                    (416) 979-6648
+    
+                    <br>
+                    <br>
+    
+                    platetopalette@info.com
+                </p>
+            </div>
+
+            <div class="icons">
+                <img src="img/instagram.png" alt="Instagram logo">
+                <img src="img/facebook.png" alt="Facebook logo">
+                <img src="img/pinterest.png" alt="Pinterest logo">
+                <img src="img/youtube.png" alt="Youtube logo">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <p class="copyright">
+            &copy 2025 PLATE TO PALETTE. All rights reserved.
+        </p>
+     
+    </footer>
+
+
+</html>

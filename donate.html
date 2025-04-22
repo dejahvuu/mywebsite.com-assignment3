@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plate to Palette Charity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Plate to Palette Charity">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <nav class="vol">
+            <img src="img/logo.png" alt="Logo" class="logo">
+
+            <a class="hamburger-menu" href="#">
+                <img src="img/hamburger-menu.png" alt="hamburger-menu-png">
+            </a>
+
+            <ol class="main-nav">  
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="button">Donate</a></li>
+            </ol>
+
+            <div class="sidebar-nav">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <br>
+                    <li><a id="xbtn" href="#">Close</a></li>
+                </ol>
+            </div>
+        </nav>
+
+        <script> 
+            const burgerIcon = document.querySelector('.hamburger-menu');
+            const sideNav = document.querySelector('.sidebar-nav');
+            const xbtn = document.getElementById('xbtn');
+    
+            function openNav () {
+                sideNav.style.width = '100vw';
+            }
+    
+            function closeNav () {
+                sideNav.style.width = '0vw';
+            }
+    
+            burgerIcon.addEventListener('click', openNav);
+            xbtn.addEventListener('click', closeNav);
+    
+            
+        </script>
+
+        <section class="donate-grid">
+
+            <div class="donate-info">
+                <h2>Donate Today</h2>
+                <br>
+                <p>
+                    Your generous donation helps us provide nutritious meals, free art workshops, and a safe, supportive space for young adults in the Greater
+                    Toronto Area. Every contribution, no matter the size, allows us to continue providing essential resources to those in need and empower the
+                    next generation of artists. 
+                </p>
+
+            </div>
+
+            <div class="form-container4">
+                <fieldset>
+                    <legend>Donation Amount</legend>
+
+                    <input type="number" id="amount" name="donation_amount">
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Information</legend>
+                    
+                    <label for="fName">First Name</label>
+                    <br>
+                    <input type="text" id="fName" name="first_name">
+
+                    <br>
+    
+                    <label for="lName">Last Name</label>
+                    <br>
+                    <input type="text" id="lName" name="last_name">
+    
+                    <br>
+    
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="text" id="phone" name="phone_number">
+    
+                    <br>
+    
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" id="email" name="email_address">
+          
+                    <br>
+
+                    <label for="home">Home Address</label>
+                    <br>
+                    <input type="text" id="home" name="home_address">
+    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Info</legend>
+
+                    <label for="cnumber">Card Number</label>
+                    <br>
+                    <input type="text" id="cumber" name="card_number">
+
+                    <br>
+    
+                    <label for="exp">Expiration Date</label>
+                    <br>
+                    <input type="text" id="exp" name="expiration_date" value="Ex: 10/025/2025">
+    
+                    <br>
+    
+                    <label for="cvv">CVV/CVC</label>
+                    <br>
+                    <input type="number" id="cvv" name="cvv">
+    
+                    <br>
+    
+                    <button type="submit">Check Out</button>
+                </fieldset>
+            </div>
+        
+        </section>
+
+    </body>
+
+    <footer>
+        <section class="footer-text">
+            <div>
+                <img src="img/logo.png" alt="Logo" class="logo2">
+            </div>
+    
+            <div class="footer-nav">
+                <ol>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+            </div>
+    
+            <div>
+                <p>
+                    123 Queen St W, Toronto,<br>
+                    ON M5H 2M9
+    
+                    <br> 
+                    <br>
+    
+                    (416) 979-6648
+    
+                    <br>
+                    <br>
+    
+                    platetopalette@info.com
+                </p>
+            </div>
+    
+            <div class="icons">
+                <img src="img/instagram.png" alt="Instagram logo">
+                <img src="img/facebook.png" alt="Facebook logo">
+                <img src="img/pinterest.png" alt="Pinterest logo">
+                <img src="img/youtube.png" alt="Youtube logo">
+            </div>
+    
+        </section>
+    
+        <hr>
+    
+        <p class="copyright">
+            &copy 2025 PLATE TO PALETTE. All rights reserved.
+        </p>
+     
+    </footer>
+    
+
+</html>
