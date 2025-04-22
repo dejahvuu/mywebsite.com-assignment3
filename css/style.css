@@ -1,0 +1,1099 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap');
+
+:root {
+    --bdr: 5px solid #fff;
+    --bdrhover: 5px solid  rgb(30, 201, 193);
+    --hovertransition: 0.3s all ease-in-out;    
+}
+
+html {
+    font-family: "MuseoModerno", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background-color: rgb(252, 215, 108);
+    color: black;
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+header {
+    width: auto;
+    height: 70vh;
+}
+
+header img {
+    margin:auto;
+    width: 100vw;
+    margin-top: 70px;
+}
+
+.title h1 {
+    font-family: "Nerko One", cursive;
+    position: relative;
+    top: -850px;
+    letter-spacing: 3px;
+    line-height: 0.1;
+    padding-left: 100px;
+    text-transform: uppercase;
+}
+
+.title p {
+    font-size: 2.3em;
+    position: relative;
+    top: -840px;
+    padding-left: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+header .button {
+    position: relative;
+    top: -850px;
+    margin-left: 100px;
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 2px; 
+    margin-top: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+header .button:hover {
+    color: black;
+    background-color:  rgb(30, 201, 193);
+    }
+
+.title {
+    padding-top: 300px;
+}
+
+.big {
+    font-size: 7em;
+}
+
+.small {
+    font-size: 5.5em;
+}
+
+nav {
+    background-color: black;
+    top: -590px;
+    position: relative;
+    width: 100vw;
+    height: 13vh;
+}
+
+
+nav ol {
+    margin-top: -130px;
+    z-index: 1000;
+    padding-left: 650px;
+
+}
+
+nav ol li {
+    display: inline-block;
+}
+
+nav ol li a {
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 40px;
+}
+
+nav ol li a:hover {
+    color: rgb(30, 201, 193);
+    transition: 0.3s all ease-in-out ;
+}
+
+nav img {
+    height: 180px;
+    margin-top: -15px;
+    padding-left: 20px;
+    background-color: black;
+    border-radius: 0px 70px 90px 0px; 
+}
+
+nav .button {
+    background-color: rgb(30, 201, 193);
+    color: black;
+    border: 0;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 2px; 
+    border-radius: 20px;
+}
+
+nav .button:hover {
+    color: black;
+    background-color:  rgb(252, 215, 108);
+}
+
+.hamburger-menu {
+        display: none;
+}
+
+.sidebar-nav {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background-color: #000000ad;
+    color: white;
+    overflow: hidden;
+    transition: 0.3s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    text-align: center;
+}
+
+.sidebar-nav ol {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav ol li {
+    display: block;
+    list-style-type: none;
+    margin: 20px 0 20px;
+    text-align: center;
+}
+
+.sidebar-nav ol li a {
+    color: white;
+    font-size: 30px;
+}
+
+.vol {
+    background-color: black;
+    width: 100vw;
+    height: 13vh;
+    margin-top: -100px;
+    top: 100px;
+    position: relative;
+}
+
+
+.vol .button {
+    background-color:  rgb(30, 201, 193);
+    color: black;
+    border: 0;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 2px; 
+    border-radius: 20px;
+}
+
+.vol .button:hover {
+    color: black;
+    background-color:  rgb(252, 215, 108);
+    }
+
+.intro {
+    display: grid;
+    padding-top: 400px;
+    grid-template-columns: 3fr 3fr;
+    gap: 100px;
+    line-height: 1.9;
+}
+
+.intro img {
+    height: 80vh;
+    border-radius: 90px;
+}
+
+
+.intro h3 {
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-left: 250px;
+}
+
+.intro p {
+    margin-left: 250px;
+}
+
+.box1 {
+    background-color: rgb(30, 201, 193);
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-left: -200px;
+    border-radius: 90px;
+    animation: slideInFromLeft 3s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.intro-image {
+    transition: transform 0.3s ease;
+  }
+  
+.intro-image:hover {
+    transform: scale(1.05) rotate(1deg);
+  }
+
+.explore {
+    display: grid;
+    padding: 200px 100px 200px 100px;
+    grid-template-columns: 3fr 3fr;
+    line-height: 2;
+    gap: 100px;
+}
+
+.explore img {
+    width: 40vw;
+    border-radius: 90px;
+    margin-bottom: 50px;
+}
+
+.explore h3 {
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: -20px;
+}
+
+.explore .button {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 2px; 
+    margin-top: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.explore .button:hover {
+    color:black;
+    background-color:  rgb(30, 201, 193);
+    }
+
+.explore-images img {
+    transition: transform 0.3s ease;
+    }
+      
+.explore-images img:hover {
+    transform: scale(1.05) rotate(-1deg);
+    }
+
+.testimonials {
+    display: grid;
+    padding: 100px 100px 50px 100px;
+    grid-template-columns: 3fr 3fr 3fr;
+    line-height: 2;
+    gap: 100px;
+    background-color: rgb(30, 201, 193);
+}
+
+.gallery {
+    display: grid;
+    padding: 200px 100px 200px 100px;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 25px;
+}
+
+.gallery img {
+    height: 55vh;
+    border-radius: 70px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: black;
+    height: 50vh;
+}
+
+.footer-text {
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 5fr;
+    padding-top: 50px;
+}
+
+footer img {
+    height: 180px;
+    padding-left: 50px;
+    margin-top: -20px;
+}
+
+.copyright {
+    color: white;
+    padding-left: 1050px;
+    padding-top: 50px;
+}
+
+footer ol li {
+    list-style: none;
+    margin-top: -5px;
+}
+
+footer ol li a {
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    line-height: 3;
+}
+
+footer ol li a:hover {
+    color: rgb(30, 201, 193);
+    transition: 0.3s all ease-in-out;
+}
+
+footer hr {
+    width: 90vw;
+}
+
+
+.icons img{
+    height: 5vh;
+    padding: 10px;
+    padding-top: 35px;
+    position: relative;
+    right: -210px;
+}
+
+/* PROGRAM PAGE */
+
+.title2 {
+    padding-top: 500px;
+    padding-left: -300px;
+    text-align: center;
+}
+
+.title2 h1 {
+    font-family: "Nerko One", cursive;
+    position: relative;
+    top: -850px;
+    letter-spacing: 3px;
+    margin-bottom: -50px;
+    text-transform: uppercase;
+}
+
+.title2 p {
+    font-size: 20pt;
+    position: relative;
+    top: -840px;
+    font-weight: 400;
+}
+
+.why {
+    padding-top: 310px;
+    text-align: center;
+
+}
+
+.why h2{
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 30pt;
+}
+
+.why p {
+    line-height: 1.9;
+    font-size: 1.2em;
+    padding-bottom: 50px;
+}
+
+.why img {
+    height: 80vh;
+    border-radius: 90px;
+    margin-bottom: 150px;
+    transition: transform 0.3s ease;
+}
+
+.why img:hover {
+    transform: scale(1.05);
+}
+
+.join {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 100px;
+    padding: 100px 120px 100px 120px;
+    background-color: rgb(30, 201, 193);
+}
+
+.join img {
+    height: 70vh;
+    border-radius: 90px;
+    transition: transform 0.3s ease;
+}
+
+.join img:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.join h2 {
+    font-family: "Nerko One", cursive;
+    font-weight: 300;
+    font-size: 30pt;
+}
+
+.join p {
+    line-height: 1.9;
+    font-size: 1.2em;
+}
+
+.volunteer {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    padding: 100px 120px 200px 120px;
+}
+
+.volunteer h2 {
+    margin-left: 150px;
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.volunteer p {
+    margin-left: 150px;
+    font-size: 1.2em;
+}
+
+.box2 {
+    background-color: rgb(30, 201, 193);
+    padding: 50px 50px 50px 50px;
+    margin-left: -200px;
+    border-radius: 90px;
+}
+
+.volunteer .button {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 50px 0px 10px 150px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.volunteer .button:hover {
+    color:black;
+    background-color:  rgb(30, 201, 193);
+    }
+
+.how-to {
+    margin-top: 100px;
+}
+
+.form-container {
+    width: 70vw;
+    height: 55vw; 
+    margin: 10vh auto;
+    border: 5px solid #fff;
+    background-color: white (0, 0, 0, 0.201);
+    padding: 20px;
+    transition: var(--hovertransition);
+}
+
+.form-container:hover {
+    border: var(--bdrhover);
+    transform: scale(1.003);
+    box-shadow: 0px 0px 20px black;
+}
+
+fieldset {
+    border: var(--bdr);
+    transition: var(--hovertransition);
+    margin: 20px 0 20px 0;
+}
+
+input {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+input:focus { 
+    outline: 2px dotted grey;
+    background-color: rgb(226, 226, 226);
+}
+
+[type="submit"] { 
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer; 
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    transition: 0.1s all ease;
+}
+
+[type="submit"]:hover {
+    background-color:  rgb(30, 201, 193);
+    color: black;
+}
+
+[type="submit"]:active { /*Active means when your mouse clicks it*/
+    background-color:  rgb(17, 127, 122);
+    color: black;
+    transform: scale(0.8);
+}
+
+/* ABOUT US PAGE */
+
+.title3 {
+    padding-top: 450px;
+    padding-left: -300px;
+    text-align: center;
+}
+
+.title3 h1 {
+    font-family: "Nerko One", cursive;
+    position: relative;
+    top: -850px;
+    letter-spacing: 3px;
+    margin-bottom: -50px;
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+.title3 p {
+    font-size: 20pt;
+    position: relative;
+    top: -840px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.mission {
+    padding: 120px 100px 100px 100px;
+}
+
+.mission h2 {
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 50px;
+    font-weight: 300;
+    padding-left: 100px;
+}
+
+.mission p {
+    line-height: 1.9;
+}
+
+.box3 {
+    background-color:  rgb(30, 201, 193);
+    height: 15vh;
+    width: 100vw;
+    padding-top: 100px;
+    margin-left: -100px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    padding: 70px 100px 70px 100px;
+    gap: 25px;
+    color: white;
+    background-color: black;
+}
+
+.team-grid img {
+    height: 50vh;
+    border-radius: 70px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-grid img:hover {
+    transform: scale(1.05);
+}
+
+.team-grid h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.team-grid p {
+    text-align: center;
+    font-weight: 100;
+}
+
+.team-grid .top {
+    grid-column: 1/4;
+}
+
+.top hr {
+    width: 90vw;
+}
+
+.top h2 {
+    text-align: center;
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 300;
+    color: white;
+}
+
+
+.map {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    padding: 200px 100px 100px 0px;
+    gap: 50px;
+}
+
+.map h2 {
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 300;
+    margin-left: 200px;
+}
+
+.white {
+    background-color: white;
+    border-radius: 20px;
+    width: 40vw;
+    padding: 5px 0px 5px 9px;
+    margin-left: 200px;
+}
+
+.box4 {
+    background-color: rgb(30, 201, 193);
+    padding: 20px 50px 100px 100px;
+    border-radius: 90px;
+    margin-left: -200px;
+}
+
+iframe {
+    padding-top: 100px;
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.08);
+}
+
+/* VOLUNTEER PAGE */
+
+.form-container2 #message {
+    height: 10vh;
+    width: 50vw; 
+}
+
+.form-container2 {
+    width: 70vw;
+    margin: 30vh 0vh 20vh 21vh;
+    border: 5px solid #fff;
+    background-color: white (0, 0, 0, 0.201);
+    padding: 20px;
+    transition: var(--hovertransition);
+}
+
+.form-container2:hover {
+    border: var(--bdrhover);
+    transform: scale(1.003);
+    box-shadow: 0px 0px 20px black;
+}
+
+/* CONTACT US PAGE */
+
+.form-container3 {
+    width: 40vw;
+    height: 95vh; 
+    margin-left: 10vh;
+    border: 5px solid #fff;
+    background-color: white (0, 0, 0, 0.201);
+    padding: 20px;
+    transition: var(--hovertransition);
+}
+
+.form-container3 #message {
+    height: 30vh;
+    width: 35vw; 
+}
+
+.form-container3 button {
+    margin-bottom: 10vh;
+}
+
+.form-container3:hover {
+    border: var(--bdrhover);
+    transform: scale(1.003);
+    box-shadow: 0px 0px 20px black;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 250px 120px 100px 120px;
+}
+
+.contact-info {
+    background-color: rgb(30, 201, 193);
+    height: 90vh;
+    padding: 50px 50px 50px 50px;
+    margin-left: -200px;
+    border-radius: 90px;
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.contact-info h3 {
+    margin-bottom: -20px;
+    padding-left: 150px;
+}
+
+.contact-info h2 {
+    font-size: 3em;
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+    padding-left: 150px;
+}
+
+.contact-info p {
+    padding-left: 150px;
+}
+
+/* DONATE PAGE */
+
+.form-container4 {
+    width: 40vw;
+    height: 100vh; 
+    margin-left: 10vh;
+    border: 5px solid #fff;
+    background-color: white (0, 0, 0, 0.201);
+    padding: 20px;
+    transition: var(--hovertransition);
+}
+
+.form-container4:hover {
+    border: var(--bdrhover);
+    transform: scale(1.003);
+    box-shadow: 0px 0px 20px black;
+}
+
+.donate-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 250px 120px 100px 120px;
+}
+
+.donate-info {
+    background-color: rgb(30, 201, 193);
+    height: 50vh;
+    padding: 50px 50px 50px 50px;
+    margin-left: -200px;
+    border-radius: 90px;
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.donate-info h3 {
+    margin-bottom: -20px;
+    padding-left: 150px;
+}
+
+.donate-info h2 {
+    font-size: 3em;
+    font-family: "Nerko One", cursive;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+    padding-left: 150px;
+}
+
+.donate-info p {
+    padding-left: 150px;
+}
+
+@media screen and (max-width:800px) {
+/* Below is for Home Page*/
+
+    .main-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu img {
+        height: 10vh;
+        padding-top: 4vh;
+     }
+
+    .logo {
+        display: none;    
+    }
+
+    .title {
+        font-size: 10px;
+        margin-top: 30vh;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        margin-top: -70vh;
+    }
+
+    .intro-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro-image img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .explore {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-images img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 0 90px; 
+        padding-bottom: 30vh;
+        height: 100vh;
+    }
+
+    footer .copyright {
+        padding: 20px 0; 
+        margin-top: 20px; 
+    }
+
+    .footer-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 20px;
+        text-align: left;
+    }
+
+    .footer-text div {
+        display: block;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .footer-nav ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-left: -220px;
+    }
+
+    .icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo2 {
+        margin-left: -90px;
+    }
+
+/* Below is for Program Page*/
+
+    .title2 {
+        font-size: 50%;
+        margin-top: 23vh;
+    }
+
+    .why {
+        padding: 0px 60px 0px 60px;
+        margin-top:  -20vh;
+    }
+
+    .why img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .join {
+        grid-template-columns: 1fr;
+        padding: 0px 60px 0px 60px;
+    }
+
+    .join img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .volunteer {
+        grid-template-columns: 1fr;
+        padding: 0px 60px 100px 60px;
+    }
+
+    .form-container {
+        padding-bottom: 53vh;
+    }
+
+/* Below is for About Us Page*/
+    .title3 {
+        font-size: 50%;
+        margin-top: 23vh;
+    }
+
+    .mission {
+        margin-top:  -60vh;
+    }
+
+    .top hr {
+        width: 80vw; 
+    }
+
+    .map {
+        grid-template-columns: 1fr;
+    }
+
+    .white {
+        width: 400px;
+    }
+
+    .map iframe {
+       padding: 0px 0px 0px 10px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+      
+    .team-grid .top {
+        grid-column: 1;
+    }
+      
+    .team-grid img {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+      
+    .team-grid h3,
+    .team-grid p {
+        text-align: center;
+    }
+      
+/* Below is for Contact Page*/
+
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        padding: 250px 60px 0px 60px;
+    }
+
+    .form-container3 {
+        margin: 100px 0px 0px -10px;
+        width: 400px;
+        margin-bottom: 100px;
+    }
+
+/* Below is for Donate Page*/
+
+    .donate-grid {
+        grid-template-columns: 1fr; 
+        padding: 250px 60px 0px 60px;
+    }
+
+    .form-container4 {
+        margin: 100px 0px 0px -10px;
+        width: 400px;
+        margin-bottom: 100px;
+    }
+
+}
+
